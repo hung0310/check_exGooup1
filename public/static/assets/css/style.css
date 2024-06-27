@@ -1,0 +1,201 @@
+/* Zoom image */
+.zoom {
+    transition: transform 1s; 
+    margin: 0 auto;
+  }
+  
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.hover_Carousel {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.hover_Carousel img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hover_Carousel:hover img {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+  overflow: hidden !important;
+}
+
+/* hover link */
+.active {
+  -webkit-text-fill-color: #F67A20 !important;
+}
+
+.effect_link {
+  background-image: linear-gradient(
+    to right,
+    #F67A20,
+    #F67A20 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.effect_link:before{
+  content: '';
+  background: #F67A20;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.effect_link:hover {
+ background-position: 0;
+}
+
+.effect_link:hover::before{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* btn_hover */
+
+.btn_hover_or {
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.btn_hover_or:hover {
+  background-color: white !important;
+  -webkit-text-fill-color: #F67A20 !important;
+}
+
+.btn_hover_w {
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.btn_hover_w:hover {
+  background-color: #F67A20 !important;
+  -webkit-text-fill-color: white !important;
+}
+
+.btn_hover_ft {
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.btn_hover_ft:hover {
+  background-color: white !important;
+  -webkit-text-fill-color: black !important;
+}
+
+/* hover_icon_brand */
+
+.hover_icon_brand {
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.hover_icon_brand:hover {
+  color: #5EB9F0 !important;
+}
+
+/* color placeholder */
+.placeholder-color::placeholder {
+  color: #959CA9;
+}
+
+/* zoom image  */
+.hoverImageWrapper {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.hoverImage {
+  transition: transform 0.5s ease-in-out;
+}
+
+.hoverImageWrapper:hover .hoverImage {
+  transform: scale(1.2);
+}
+
+/* hover card */
+.hover_card:hover {
+  box-shadow: 5px 5px 10px 5px rgba(0.1, 0.1, 0.3, 0.1);
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(-15px);
+}
+
+.hover_card_strategy_left:hover {
+  box-shadow: 5px 5px 10px 5px rgba(0.1, 0.1, 0.3, 0.1);
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-20px);
+}
+
+.hover_card_strategy_right:hover {
+  box-shadow: 5px 5px 10px 5px rgba(0.1, 0.1, 0.3, 0.1);
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(20px);
+}
+
+/* hover_image_blog */
+.newsCard {
+  position: relative;
+  margin: 5rem auto;
+  background-color: #fff;
+  border-radius: 15px;
+  color:#fff;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.newsCaption {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  opacity: .6;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  padding: 15px;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
+  transition: opacity 0.1s 0.3s, -webkit-transform 0.4s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s, -webkit-transform 0.4s;
+}
+
+.newsCaption-title {
+  margin-top: 0px;
+}
+
+.newsCaption-content {
+  margin: 0;
+}
+
+.news-Slide-up:hover .newsCaption {
+  opacity: .6;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: opacity 0.1s, -webkit-transform 0.4s;
+  transition: opacity 0.1s, -webkit-transform 0.4s;
+  transition: transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s, -webkit-transform 0.4s;
+}
